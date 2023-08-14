@@ -1,3 +1,0 @@
-ErrorDocument 403 http://www.ji-non.com/
-ErrorDocument 404 http://www.ji-non.com/
-ErrorDocument 500 http://www.ji-non.com/
