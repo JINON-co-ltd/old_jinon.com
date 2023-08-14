@@ -1,0 +1,610 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {height:100%;}
+
+body{
+	height:100%;
+	width: 100%;
+	font: 13px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	color: #333;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.clear { clear: both; }
+
+
+
+h1 { font-size: 18px; font-weight: bold; padding-left:120px;}
+h2 { font-size: 20px; font-weight: bold; }
+h3 { font-size: 26px; font-weight: bold;}
+h4 { font-size: 16px; font-weight: bold;}
+h5 { font-size: 14px; font-weight: bold;}
+h6 { font-size: 12px; font-weight: bold;}
+p { font-size:13px;
+	margin-top: 0;
+	padding-right: 1px;
+	padding-left: 15px; 
+	line-height:2em;
+}
+span {font-weight:bold;
+}
+small {font-size:10px;}
+img {border: none; margin-bottom:0px;}
+a img {border: none;}
+a:hover img{ opacity:0.7; filter: alpha(opacity=70); -ms-filter: "alpha(opacity=70)"; -moz-opacity:0.7; -khtml-opacity: 0.7;}
+a:link {color: #333; text-decoration: underline; }
+a:visited {color: #333; text-decoration: underline;}
+a:hover, a:active, a:focus {text-decoration: none;}
+
+
+ul { list-style-type: circle; }
+
+
+#floating-menu {
+	width:200px;
+	color:#fff;
+    position: fixed;
+    top: 130px;
+    left: 0px;
+    right: 0px;
+    background-color: #000;
+    border: 0px solid #000000;
+    z-index: 9999;
+	font-size:13px;
+}
+#floating-menu p {
+	padding:0px;
+	margin:0 10px 0 5px;
+	border-bottom:1px solid #fff;
+}
+#floating-menu ul {
+	font-size:11px;
+	padding-left:0px;
+	margin:5px 10px 10px 10px;
+}
+#floating-menu li {
+	margin-bottom:5px;
+	border-bottom:1px dotted #fff;
+}
+
+
+
+/* ~~ containe ~~ */
+#container {	
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#container_home {	
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#container_is {	
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body > #container, #container_home, #container_is {
+    height: auto;
+}
+
+/* ~~ content ~~ */
+#content {
+	padding-bottom:40px;/* ~~ footer height ~~ */
+}
+
+
+/* ~~ header ~~ */
+#header ul { list-style-type: none; margin-top:20px;}
+#header ul li {  }
+#header a {  }
+#header a:link { color: #333; text-decoration: none; }
+#header a:visited { color: #333; text-decoration: none; }
+#header a:hover, a:active, a:focus {
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
+#header {
+	height:120px;
+	width:100%;
+	min-width:1000px;
+	padding: 0px;
+	background: #fff;
+	text-align:left;
+	font-size:14px;
+	overflow: hidden;
+}
+#header_left1 {
+	float:left;
+	margin:41px 10px 0 30px;
+}
+
+#header_left2 {
+	float:left;
+	margin:0;
+	font-weight: nomal;
+}
+
+#header_left3 {
+	float:left;
+	font-size: 10px;
+	margin:0;
+	font-weight: 100;
+}
+#header_left3 a:link{ text-decoration:underline;}
+#header_left3 a:hover, a:active, a:focus {text-decoration: none;}
+
+
+#header_right {
+	float:right;
+	font-size: 10px;
+	margin-right:30px;
+	font-weight: 100;
+	text-align:right;
+}
+#header_right a:link{ text-decoration:underline;}
+#header_right a:hover, a:active, a:focus {text-decoration: none;}
+
+
+/* ~~ home ~~ */
+#home-content a { text-decoration: none;  }
+#home-content a:link { color: #fff; text-decoration: none; }
+#home-content a:visited { color: #fff; text-decoration: none; }
+#home-content a:hover, a:active, a:focus {text-decoration: none;color: #A9A9A9;}
+
+#home-content {
+	color: #fff;
+	padding-bottom:40px; /* ~~ footer height ~~ */
+	border-top:#000  thin solid;
+}
+
+#home-top {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	text-align:center;
+	background: #009999;
+	float:left;
+}
+
+#home-bottom {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	text-align:center;
+	background: #FF9900;
+	float:left;
+}
+
+
+
+#home-box {
+	top: 50%;
+	left: 50%;
+	width: 850px;
+	float:left;
+	
+	position:absolute;
+    top:50%;
+    left:50%;
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform:translate(-50%, -50%);
+}
+#home-box1 {
+	width: 850px;
+	font-size:48px;
+	float:left;
+	margin-bottom:10px;
+}
+#home-box2 {
+	width: 850px;
+}
+
+/* ~~ white-obi ~~ */
+#white-obi {
+	height: 180px;
+	width: 100%;
+	background:#fff;
+	margin: 0;
+	padding-top: 65px;
+	border-top:#000  thin solid;
+	border-bottom:#000  thin solid;
+}
+#white-obi img {
+	margin-left:120px;
+	padding-bottom:8px;
+}
+#white-obi p {
+	margin-left:110px;
+}
+
+
+
+
+
+
+/* ~~ company-box ~~ */
+#company-box {
+	width: 850px;
+	background:#fff;
+	margin: 0 auto;  
+	padding-top: 0px;
+}
+#company-box p {
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+#company-box table {
+	font-size:13px;
+	line-height:2em;
+}
+
+
+/* ~~ staff-box ~~ */
+#staff-box {
+	width: 160px;
+	height:300px;
+	float:left;
+	margin:65px 50px 0 0;
+	text-align:center;
+}
+
+#staff-box p {
+	font-size:10px;
+	text-align:center;
+	margin:0;
+	padding:0;
+	line-height:1.5em;
+}
+
+#staff-box img{
+	margin-bottom:15px;
+}
+
+
+#staff-box a a:hover, a:active, a:focus {
+	text-decoration:none;
+}
+
+
+/* ~~ popup ~~ */
+#popup-box {
+	width: 150px;
+	float:left;
+	margin:65px 0 0 65px;
+	text-align:left;
+}
+
+#popup-box_2 {
+	width: 450px;
+	float:left;
+	margin:65px 0 0 30px;
+	text-align:left;
+}
+
+
+
+/* ~~ contact ~~ */
+#contact-box {
+	width: 300px;
+	height: 300px;
+	float:left;
+	margin:65px 0 0 0;
+	text-align:left;
+}
+
+#contact-box_2 {
+	width: 470px;
+	height: 300px;
+	float:left;
+	margin:65px 0 0 30px;
+	text-align:left;
+}
+
+#contact-box_2 p {
+	font-size:30px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:500;
+	line-height:1.3em;
+	margin:0;
+	padding:0;
+
+
+}
+
+
+
+
+
+
+
+
+/* ~~ vp ~~ */
+#vp-box {
+	width: 850px;
+	background:#fff;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+
+#vp-box h2 {
+	font-size:16px;
+	margin-bottom:0px;
+}
+
+#green-obi {
+	height: 180px;
+	width: 100%;
+	background:#009999;
+	margin: 0;
+	padding-top: 65px;
+	border-top:#000  thin solid;
+	border-bottom:#000  thin solid;
+}
+#green-obi img {
+	margin-left:120px;
+	padding-bottom:8px;
+}
+#green-obi p {
+	color:#FFF;
+	margin-left:110px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+
+
+#title-obi {
+	height: 100%;
+	width: 100%;
+	border-bottom:1px solid #000;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+#title-obi h2 {
+	font-size:16px;
+}
+
+
+
+/* ~~ accordion ~~ */
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+	border-bottom:1px solid #000;
+}
+.st-accordion ul{
+	width:100%;
+	padding-left:0;
+	margin-left:0;
+	
+}
+.st-accordion ul li{
+    line-height:2.5em;
+	padding-bottom:0;
+    overflow: hidden;	
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+	
+}
+.st-accordion ul li > a{
+    display: block;
+	position: relative;
+    line-height: 50px;
+	text-decoration:none;
+	outline:none;
+	
+}
+
+.st-accordion ul li > a:hover{
+	background-image:url(../img/stripe_works.png); 
+	
+	 opacity:0.7; filter: alpha(opacity=70); -ms-filter: "alpha(opacity=70)"; -moz-opacity:0.7; -khtml-opacity: 0.7;
+}
+
+
+@media screen and (max-width: 320px){
+	.st-accordion ul li > a{
+		font-size:36px;
+	}
+}
+
+
+.st-content{
+    padding: 0;
+}
+
+.st-content ul {
+	list-style-type: circle;
+	list-style-position: inside;
+	margin-left:20px;
+}
+
+.st-content li {
+	padding-left: 20px;
+}
+
+
+#st-titlebox {
+	width:850px;
+	margin:0 auto;
+	padding-left:20px;
+	border-top:1px solid #000;
+	border-bottom:0px solid #fff;
+	font-size:15px;
+}
+
+
+#st-textbox {
+	width:850px;
+	margin:0 auto;
+	padding:0 0 30px 20px;
+	border-top:0px solid #fff;
+    border-bottom:0px solid #fff;
+}
+
+
+
+#st-textbox li > a{
+	display:inline;
+	text-decoration:underline;
+	background-color:#fff;
+}
+
+#st-textbox li > a:hover{
+	text-decoration:none;
+	background-color:#fff;
+}
+
+#st-textbox p{
+	font-size:x-small;
+	line-height: 1em;
+	margin-left:30px;
+}
+
+
+
+/* ~~ island studio ~~ */
+#is-box {
+	width: 850px;
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#is-box h2 {
+	font-size:16px;
+	margin-bottom:0px;
+}
+
+#yellow-obi {
+	height: 180px;
+	width: 100%;
+	background:#FF9900;
+	margin: 0;
+	padding-top: 65px;
+	border-top:#000  thin solid;
+	border-bottom:#000  thin solid;
+}
+#yellow-obi img {
+	margin-left:120px;
+	padding-bottom:8px;
+}
+#yellow-obi p {
+	color:#fff;
+	margin-left:110px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#is-title-box {
+	background-image:url(../img/stripe_island.png); 
+	height:100px;
+	margin-bottom:30px;
+	
+}
+#is-title-boxin {
+	width: 850px;
+	margin: 0 auto;
+	padding-top:19px;
+	
+}
+
+#is-contents-box {
+	width: 400px;
+	padding-left:20px;
+	padding-top:10px;
+	margin-bottom:50px;
+	float:left;
+}
+
+#is-contents-box  ul {
+	padding-left:15px;
+	list-style-type: circle;
+}
+
+
+
+
+/* ~~ footer ~~ */
+#footer {
+	height:40px;
+	width:100%;
+	background: #000;
+	position:absolute;
+	bottom:0;
+	font-size:9px;
+	color: #fff;
+	line-height:40px;
+	margin-top:50px;
+}
+
+#footer a { padding: 0 15px }
+#footer a:link { color: #fff; text-decoration: none; }
+#footer a:visited { color: #fff; text-decoration: none; }
+#footer a:hover, a:active, a:focus {
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
+#footer_left {
+	float:left;
+	text-align:left;
+	padding-left:50px;
+	width:500px;
+}
+
+#footer_right {
+	float:right;
+	text-align:right;
+	padding-right:40px;
+	width:300px;
+}
+
+
+
+#page-top {
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    font-size: 9px;
+}
+#page-top a {
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    border-radius: 0;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: #333;
+}
